@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700|Poppins');
+
+/*font-family: 'PT Serif', serif;
+font-family: 'Poppins', sans-serif;*/
+
+/*global*/
+.container {
+  /*width: 1170px;*/
+}
+body p {
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+  color: #000;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+/*header*/
+header {
+  background-image: url(../images/header-background.png);
+  background-size: cover;
+  background-position: center;
+  height: 825px;
+}
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0 );
+  border: none;
+  height: 100px;
+  padding-top: 35px;
+}
+.navbar-collapse {
+  float: right;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+  font-size: 14px;
+  padding-top: 20px;
+  font-family: 'PT Serif', serif;
+}
+header h1 {
+  font-size: 50px;
+  color: #fff;
+  /*margin-top: 230px;*/
+  margin-top: 180px;
+}
+header p {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  /*.navbar-inverse .navbar-nav>li>a {
+    float: none;
+    text-align: center;
+  }*/
+  .navbar-inverse .navbar-toggle {
+    margin-top: 30px;
+  }
+  .navbar-collapse {
+    float: none;
+    text-align: center;
+  }
+}
