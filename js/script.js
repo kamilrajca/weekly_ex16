@@ -5,6 +5,13 @@
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 800)});
+// hamburger
+$(document).ready(function(){
+  $('.navbar-toggle').click(function(e){
+    e.preventDefault();
+    $('.navbar-nav').toggleClass('visible');
+  });
+});
 
 function moveToSelected(element) {
 

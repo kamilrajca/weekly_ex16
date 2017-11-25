@@ -42,10 +42,25 @@ header {
   border: none;
   height: 100px;
   padding-top: 35px;
+  
 }
 .navbar-collapse {
   float: right;
 }
+/*.navbar-collapse.in {
+  background-color: red;
+  display: block;
+}*/
+.visible {
+  display: block;
+  /*margin-top: 55px;*/
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
 .navbar-inverse .navbar-nav>li>a {
   color: #fff;
   font-size: 14px;
@@ -224,12 +239,14 @@ html, body, main {
   top: 150px;
   left: 140px;
   z-index: 15;
+  outline: none;
 }
 .buttons #next {
   position: absolute;
   top: 150px;
   left: 390px;
   z-index: 15;
+  outline: none;
 }
 .buttons .btn-carousel  {
   background-color: #333;
@@ -368,9 +385,7 @@ footer p {
     text-align: center;
   }
   #why-choose {
-    background-size: 300px ;
-    background-position: center;
-    margin-top: 0;
+    background-image: none;
   }
   .buttons #prev {
     left: 200px;
@@ -397,6 +412,10 @@ footer p {
   }
 }
 @media screen and (max-width: 768px) {
+  .number-h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
   .about-foto {
     background: none;
   }
