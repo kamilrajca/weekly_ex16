@@ -42,23 +42,22 @@ header {
   border: none;
   height: 100px;
   padding-top: 35px;
-  
+  z-index: 10;
 }
 .navbar-collapse {
   float: right;
 }
-/*.navbar-collapse.in {
-  background-color: red;
-  display: block;
-}*/
+/*mobile button*/
 .visible {
   display: block;
-  /*margin-top: 55px;*/
   padding: 0;
   width: 100%;
   text-align: center;
   background-color: green;
   margin-bottom: 20px;
+}
+.text-visible {
+  margin-top: 150px;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -115,6 +114,7 @@ header p {
   background-size: cover;
   background-position: center;
   height: 330px;
+  /*border-radius: 5px; */
 }
 .get-your .container {
   padding-top: 180px;
@@ -453,5 +453,11 @@ footer p {
   footer {
     margin-top: 50px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  #carousel,
+  .buttons .btn-carousel {
+    display: none;
   }
 }

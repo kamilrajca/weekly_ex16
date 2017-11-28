@@ -12,6 +12,14 @@ $(document).ready(function(){
     $('.navbar-nav').toggleClass('visible');
   });
 });
+// obnizanie h1 przy button menu
+$(document).ready(function(){
+  $('.navbar-toggle').click(function(e){
+    e.preventDefault();
+    $('.header-text').toggleClass('text-visible');
+  });
+});
+
 
 function moveToSelected(element) {
 
